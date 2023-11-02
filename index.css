@@ -1,0 +1,104 @@
+/*
+COLOR PALETTE
+
+BLACK: #201A23
+WHITE: #FBFBFB
+DARK: #44354A
+COLOR: #9E4770
+*/
+
+html, body {
+    margin: 0 auto;
+    padding: ;
+    text-align: center;
+    color: #FFF;
+    max-width: 460px;
+}
+
+body {
+    background-image: url('images/midnight-city-aesthetic.jpg');
+    background-size: cover;
+    background-attachment: fixed
+}
+
+h1 {
+    padding-bottom: 0px;
+    margin-bottom: .5em;
+}
+
+h2 {
+    font-size: 1.25rem
+}
+
+button {
+    background-color: #9E4770;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    margin: .25rem;
+    padding: .5em 2em;
+}
+
+.stats-display {
+    background-color: #44354A;
+    border-radius: 10px;
+    margin: auto;
+    padding: .5em 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.salesman-container {
+    margin: 1rem;
+    padding: 1rem;
+    background: #201A23;
+}
+
+.pfp {
+    border: 10px solid #44354A;
+    border-radius: 50%;
+    max-width: 128px;
+    height: 100%;
+}
+
+.revenue-commission-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.revenue-commission-container .stats-display {
+    width: 150px;
+    display: flex;
+    justify-content: center
+}
+
+
+
+.money-fall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.money-fall span {
+    position: absolute;
+    font-size: 2rem;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: green;
+}
+
+@keyframes fall {
+    0% {
+        top: -5%; /* Starts just outside of the viewport */
+    }
+    100% {
+        top: 105%; /* Ends just outside of the viewport */
+    }
+}
